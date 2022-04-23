@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">HUY_TestGV</string>
+    <string name="txt_question1"><![CDATA[Question 1: Chính phương là bình phương của 1 số tự nhiên. Yêu cầu: Cho số N , hãy đếm xem có bao nhiêu số chính phương từ 1 tới N. (Với N là số nguyên > 0)]]></string>
+    <string name="txt_question2"><![CDATA[Số nguyên tố đối xứng là số nguyên tố có các chữ số đối xứng nhau . Ví dụ : 2, 131, 151 là các số nguyên tố đối xứng. 5, 17, 23 không phải số nguyên tố đối xứng Yêu cầu: Tìm ra các số nguyên tố đối xứng từ N đến M và ghi ra các số đó. (Với N và M là số nguyên > 0)]]></string>
+    <string name="txt_question3">Ước số là một số tự nhiên khi một số tự nhiên khác chia với nó sẽ được chia hết. Ví dụ: 6 chia hết được cho 1, 2, 3, 6 thì 1, 2, 3, 6 là ước số của 6. Yêu cầu: Cho số Z. Hãy tìm các ước là số nguyên tố của Z. Hãy kiểm tra tích các ước là số nguyên tố của Z có nhỏ hơn Z hay không. (Nếu Z chỉ có 1 ước nguyên tố thì tích các ước nguyên tố của Z = Z)</string>
 </resources>

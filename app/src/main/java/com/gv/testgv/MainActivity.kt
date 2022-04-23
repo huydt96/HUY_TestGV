@@ -1,5 +1,6 @@
 package com.gv.testgv
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.text.isDigitsOnly
@@ -20,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         binding.btn3.setOnClickListener { question3() }
     }
 
+    @SuppressLint("SetTextI18n")
     private fun question1() {
         val input = binding.edInputQuestion1.text.toString()
         if (!checkValid(input)) {
@@ -36,6 +38,7 @@ class MainActivity : AppCompatActivity() {
         binding.tvOutput1.text = "từ 1 tới N có $countSquareNumber số chính phương"
     }
 
+    @SuppressLint("SetTextI18n")
     private fun question2() {
         val input1 = binding.edInput1Question2.text.toString()
         val input2 = binding.edInput2Question2.text.toString()
@@ -57,6 +60,7 @@ class MainActivity : AppCompatActivity() {
         binding.tvOutput2.text = "Các số nguyên tố đối xứng từ $input1 đến $input2 là: $result"
     }
 
+    @SuppressLint("SetTextI18n")
     private fun question3() {
         val input = binding.edInputQuestion3.text.toString()
         if (!checkValid(input)) {
@@ -67,9 +71,6 @@ class MainActivity : AppCompatActivity() {
         var multiplicationNumber = 1
         var listDividerIsPrime = ""
         for (i in 1..number) {
-            if (isDivider(i, number)) {
-//                Log.i("HUY", "question3: isDivider +$i")
-            }
             if (isDivider(i, number) && isPrime(i)) {
                 listDividerIsPrime += " $i"
                 multiplicationNumber *= i
